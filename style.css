@@ -25,7 +25,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
 }
@@ -40,7 +40,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
- padding: 0 100px;
+  padding: 15px 100px;
   background: #ffffff;
   position: fixed;
   top: 0;
@@ -61,7 +61,6 @@ header .search label {
   border-radius: 12px 0 0 12px;
   padding: 10px 48px 10px 16px;
   position: relative;
-  /* left: 1px; */
 }
 
 header .search input {
@@ -105,4 +104,59 @@ header .nav-imgs .img-bag {
   width: 21px;
   height: 20px;
   margin-left: 40px;
+}
+
+/* --------------------------------section banner------------------------------ */
+
+.banner {
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+}
+.banner .banner-subfocus .banner-img {
+  background-image: url(./assets/banner-img.png);
+  width: 419px;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.banner .banner-subfocus {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  width: 419px;
+  height: 280px;
+  margin-left: 31px;
+}
+.banner .banner-subfocus p,
+.banner .banner-subfocus h2,
+.banner .banner-subfocus .banner-btn {
+  margin-left: 33px;
+}
+.banner .banner-subfocus p {
+  font: 600 12px "Poppins";
+  color: #6a983c;
+  padding-top: 48px;
+}
+.banner .banner-subfocus h2 {
+  font: 600 22px "Poppins";
+  color: #151515;
+  padding-top: 8px;
+}
+.banner .banner-subfocus .banner-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 15px "Poppins";
+  color: #151515;
+  width: 163px;
+  height: 47px;
+  border: 2px solid #92c064;
+  border-radius: 12px;
+  margin-top: 94px;
+}
+.banner .banner-subfocus .banner-btn::after {
+  content: url(./assets/arrow.svg);
+  margin-left: 6px;
+  margin-top: 5px;
 }
