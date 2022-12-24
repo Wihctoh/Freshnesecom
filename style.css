@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(./fonts/Poppins-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(./fonts/Poppins-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(./fonts/Poppins-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(./fonts/Poppins-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+}
+body {
+  width: 1260px;
+  margin: 0 auto;
+}
+
+/* --------------------------------header------------------------------ */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ padding: 0 100px;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header .search {
+  display: flex;
+  align-items: center;
+}
+
+header .search label {
+  font: 700 15px "Poppins";
+  color: #151515;
+  background: #f9f9f9;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px 0 0 12px;
+  padding: 10px 48px 10px 16px;
+  position: relative;
+  /* left: 1px; */
+}
+
+header .search input {
+  width: 330px;
+  padding: 11px 0 11px 24px;
+  background: #f9f9f9;
+  border: 1px solid #d1d1d1;
+  border-radius: 0 12px 12px 0;
+  outline: none;
+}
+
+header .search input::placeholder {
+  font: 400 14px "Poppins";
+  color: #a9a9a9;
+}
+
+header .nav-imgs {
+  display: flex;
+}
+
+header .img-logo {
+  background-image: url(./assets/Freshnesecom.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 177px;
+  height: 18px;
+}
+
+header .nav-imgs .img-man {
+  background-image: url(./assets/Layer-man.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 21px;
+  height: 20px;
+}
+
+header .nav-imgs .img-bag {
+  background-image: url(./assets/Layer-bag.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 21px;
+  height: 20px;
+  margin-left: 40px;
+}
