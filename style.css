@@ -60,13 +60,16 @@ header .search {
   height: 45px;
 }
 header .search label {
+  display: flex;
+  align-items: center;
   font: 700 15px "Poppins";
   color: #151515;
   background: #f9f9f9;
   border: 1px solid #d1d1d1;
   border-radius: 12px 0 0 12px;
-  padding: 10px 48px 10px 16px;
-  /* position: relative; */
+  padding: 0 48px 0 16px ;
+  height: 44px;
+  white-space: nowrap;
 }
 header .search input {
   width: 330px;
